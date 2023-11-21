@@ -1,5 +1,6 @@
 const passwordInput = document.getElementById('password');
 const togglePassword = document.getElementById('togglePassword');
+const loginButton = document.querySelector('.btn'); 
 
 togglePassword.addEventListener('click', () => {
     if(passwordInput.type === 'password') {
@@ -10,3 +11,11 @@ togglePassword.addEventListener('click', () => {
         togglePassword.innerHTML = '<i class="far fa-eye-slash"></i>';
     }
 });
+
+ const loginForm = document.querySelector('.btn');
+  if (loginForm) {
+    loginForm.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.location.href = 'personalinfo.html';
+    });
+  }

@@ -1,6 +1,8 @@
 const passwordInput = document.getElementById('password');
 const togglePassword = document.getElementById('togglePassword');
+const loginButton = document.querySelector('.btn'); 
 
+const signupLink = document.querySelector('.signup a'); 
 togglePassword.addEventListener('click', () => {
     if(passwordInput.type === 'password') {
         passwordInput.type = 'text';
@@ -10,16 +12,11 @@ togglePassword.addEventListener('click', () => {
         togglePassword.innerHTML = '<i class="far fa-eye-slash"></i>';
     }
 });
-var loginButton = document.getElementsByClassName("btn");
-if (loginButton) {
-  loginButton.addEventListener("click", function (e) {
-    window.location.href = "./LogIn.html";
-  });
-}
 
-var loginButton = document.getElementsByClassName("signup");
-if (loginButton) {
-  loginButton.addEventListener("click", function (e) {
-    window.location.href = "./signup.html";
-  });
-}
+  const loginForm = document.querySelector('.btn');
+  if (loginForm) {
+    loginForm.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.location.href = 'personalinfo.html';
+    });
+  }
