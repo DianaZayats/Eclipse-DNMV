@@ -181,3 +181,16 @@ body {
 .signup a:hover {
     text-decoration: underline;
 }
+.google {
+color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+.google a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.google a:hover {
+    text-decoration: underline;
+}
