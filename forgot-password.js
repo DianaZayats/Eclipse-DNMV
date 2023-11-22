@@ -13,10 +13,10 @@ togglePassword.addEventListener("click", () => {
   }
 });
 
-const loginForm = document.getElementById("ForgotPasswordForm");
-if (loginForm) {
-  loginForm.addEventListener("submit", (e) => {
+const ForgotPasswordForm = document.getElementById("ForgotPasswordForm");
+if (ForgotPasswordForm) {
+  ForgotPasswordForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    window.location.href = "personalinfo.html";
+    window.location.href = "login.html";
   });
 }
