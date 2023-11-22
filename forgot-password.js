@@ -18,7 +18,6 @@ const passwordResettingFrom = document.getElementById("ForgotPasswordForm");
 if (passwordResettingFrom) {
   passwordResettingFrom.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log('✌️e --->', e);
-    window.location.href = "personalinfo.html";
+    window.location.href = "login.html";
   });
 }
