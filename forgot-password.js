@@ -13,7 +13,7 @@ togglePassword.addEventListener("click", () => {
   }
 });
 
-const loginForm = document.getElementById("login-form");
+const loginForm = document.getElementById("ForgotPasswordForm");
 if (loginForm) {
   loginForm.addEventListener("submit", (e) => {
     e.preventDefault();

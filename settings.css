@@ -36,7 +36,6 @@ body {
     border-radius: 5px;
     text-decoration: none;
     color: #fff;
-    transition: background 0.3s ease;
 }
 
 .menu-item.active,
@@ -84,16 +83,22 @@ body {
     color: #fff;
 }
 
-.info-card input {
+.info-card input,
+.info-card input[type="password"],
+.info-card input[type="email"],
+.info-card input[type="text"] {
+    background: rgba(255, 255, 255, 0.12); 
     width: 100%;
-    padding: 10px 35px 20px 10px;
+    padding: 10px 35px 10px 10px;
     outline: none;
     border: none;
     border-radius: 10px;
     color: #fff;
-    background: rgba(255, 255, 255, 0.12);
+    margin-bottom: 10px;
 }
-
+.info-group {
+    position: relative;
+}
 
 .info-card input::placeholder {
     color: rgba(255, 255, 255, 0.7);

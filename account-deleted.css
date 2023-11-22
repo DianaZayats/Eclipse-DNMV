@@ -1,0 +1,38 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background: url("./images/back.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.content-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-box {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.012);
+    padding: 20px;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+}
+
+.message-box h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Якщо використовується псевдоелементи для створення ліній або інших ефектів, їх також потрібно видалити */
+.message-box h1::before,
+.message-box h1::after {
+    content: none;
+}
