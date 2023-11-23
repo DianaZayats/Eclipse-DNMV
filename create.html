@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="settings.css" />
+    <title>Create</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <nav class="menu">
+        <a href="personalinfo.html" class="menu-item">Personal info</a>
+        <a href="#" class="menu-item active">Settings</a>
+        <a href="login.html" class="menu-item">Log out</a>
+      </nav>
+    </div>
+    <div class="content">
+      <h1 class="content-title">Hello!</h1>
+      <form class="info-card" autocomplete="off">
+        <h2 class="info-title">Сreate info</h2>
+        <label class="info-group">
+          <span class="info-label">First name</span>
+          <input type="text" name="firstname" required placeholder="Name" />
+        </label>
+        <label class="info-group">
+          <span class="info-label">Last name</span>
+          <input type="text" name="lastname" required placeholder="Last Name" />
+        </label>
+        <label class="info-group">
+          <span class="info-label">Phone</span>
+          <input
+            type="text"
+            name="phone"
+            required
+            placeholder="+380999999999"
+          />
+        </label>
+        <label class="info-group">
+          <span class="info-label">Email</span>
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="email@gmail.com"
+          />
+        </label>
+        <label>
+          <label class="info-group">
+          <span class="info-label">Current Password</span>
+          <input type="password" id="password" 
+          required placeholder="Password" />
+          </span>
+        </label>
+        <label>
+          <label class="info-group">
+          <span class="info-label">New Password</span>
+          <input type="password" id="password" 
+          required placeholder="Password" />
+          </span>
+        </label>
+        <button type="submit" class="btn-change">Save</button>
+      </form>
+    </div>
+
+    <script src="settings.js"></script>
+  </body>
+</html>
